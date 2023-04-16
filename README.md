@@ -12,7 +12,6 @@ Here's a preview of the application:
 You'll build everything with Angular using Angular's powerful tooling and great browser integration.
 
 Here's a preview of the finished application:
->>>>>>> experimenting
 
 ![Completed application - one column search results, second column search details](9yB5AM9sBgVwfTR.png)
 

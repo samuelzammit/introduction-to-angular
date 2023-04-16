@@ -9,9 +9,14 @@ import { HousingLocation } from '../housing-location';
 export class HousingListComponent implements OnInit {
 
   @Input() locationList: HousingLocation[] = [];
+<<<<<<< HEAD
   results: HousingLocation[] = [];
 
   @Output() locationSelectedEvent = new EventEmitter<HousingLocation>();
+=======
+  results:HousingLocation[] = [];
+  @Output() selectedLocationEvent = new EventEmitter<HousingLocation>();
+>>>>>>> experimenting
 
   constructor() { }
 
@@ -21,10 +26,23 @@ export class HousingListComponent implements OnInit {
   searchHousingLocations(searchText: string) {
     if (!searchText) return;
 
+<<<<<<< HEAD
     this.results = this.locationList.filter((location: any) => location.city.toLowerCase().includes(searchText.toLowerCase()));
   }
 
   selectHousingLocation(location: HousingLocation) {
     this.locationSelectedEvent.emit(location);
   }
+=======
+    this.results = this.locationList
+      .filter(
+        location => location.city.toLowerCase().includes(searchText.toLowerCase())
+      )
+  }
+
+  selectHousingLocation(location: HousingLocation) {
+    this.selectedLocationEvent.emit(location)
+  }
+
+>>>>>>> experimenting
 }

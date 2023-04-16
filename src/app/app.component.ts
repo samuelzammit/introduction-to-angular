@@ -39,9 +39,18 @@ export class AppComponent {
     }
   ];
 
+<<<<<<< HEAD
   selectedLocation: HousingLocation | undefined;// = this.housingLocationList[0];
 
   updateSelectedLocation(location: HousingLocation) {
     this.selectedLocation = location;
   }
+=======
+  selectedLocation: HousingLocation | undefined;
+  
+  updateSelectedLocation(location: HousingLocation) {
+      this.selectedLocation = location
+  }
+
+>>>>>>> experimenting
 }
